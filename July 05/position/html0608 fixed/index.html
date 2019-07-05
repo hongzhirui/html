@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.main{
+				height: 550;
+				width: 600;
+				border: 1px solid blue;
+				margin: 100px;
+			}
+			
+			.div1{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				
+				
+				position: fixed;
+				left: 0px;
+				top: 50px;
+				z-index: 2;
+			}
+			
+			.div2{
+				width: 150px;
+				height: 150px;
+				background-color: green;
+				
+				position: fixed;
+				left: 0px;
+				top: 50px;
+				z-index: 1;
+			}
+			
+			.div3{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			
+			/*如果两个绝对位置相同，看出现的顺序，谁出现的晚谁就在上面
+			 * 或者设置z-index,谁的z-index高谁就在上面
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="div1">1</div>
+			<div class="div2">2</div>
+			<div class="div3">3</div>
+		</div>
+	</body>
+</html>
