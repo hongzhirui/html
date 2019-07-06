@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.ppp{
+				display: inline-block;
+				border: 1px solid blue;
+				background-color: gray;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ppp"
+			onmouseenter="welcome(this)"
+			onmouseleave="goodbye(this)">
+			欢迎
+		</div>
+	</body>
+	<script>
+		function welcome(elem){
+			elem.innerHTML = "您好";
+			elem.style.backgroundColor = "blue";
+		}
+		function goodbye(elem){
+			elem.innerHTML = "欢迎";
+			elem.style.backgroundColor = "gray";
+		}
+		
+	</script>
+</html>

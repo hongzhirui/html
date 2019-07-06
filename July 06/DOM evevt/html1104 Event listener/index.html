@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.main{
+				height: 300px;
+				width: 500px;
+				padding: 20px;
+				background-color: darkgray;
+				margin: 100px auto;
+				border: 1px solid gray;
+				box-shadow: 1px 1px 3px #aaa;
+			}
+			input{
+				width: 100%;
+				padding: 6px;
+				margin: 2px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div style="text-align: center; margin:10px; color:#444;">用户登录</div>
+			
+			<!--普通文本框-->
+			<input type='text' placeholder="用户名" /><br>
+			
+			<!--密码文本框-->
+			<input id='password' type='password' placeholder="密码"/>
+		</div>
+	</body>
+	<script>
+		//从DOM中取得目标元素
+		var elem = document.getElementById("password");
+		
+		//给目标元素添加一个事件监听器：当'keyup'事件发生时，运行相应的function
+		elem.addEventListener('keyup', function(event){
+			if(event.keyCode == 13){
+				alert("用户按了回车键");
+			}
+		});
+	</script>
+</html>

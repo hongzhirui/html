@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.ppp{
+				display: inline-block;
+				padding: 10px;
+				border: 1px solid #ccc;
+				background-color: #f1f1f1;
+				cursor: pointer;/*鼠标形状设置*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ppp" onclick="test(this)">戳我</div>
+	</body>
+	<script>
+		window.test = function(elem){
+			elem.innerHTML = "哎呀";
+		};
+	</script>
+</html>
