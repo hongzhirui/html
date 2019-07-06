@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body{
+				margin: 0px;
+				box-sizing: border-box;
+			}
+			table{
+				border-collapse: collapse; /* 边线收缩 */
+				table-layout: fixed ;  /* 自动布局还是固定布局 */
+				/*word-break: break-all;  换行设定*/ 
+				word-wrap:break-word;   /*换行折断设定*/ 
+			}
+			table,th,td{
+				padding: 5px;
+				text-align: left;
+			}
+			tr.head{
+				border: 0px solid gray;
+				border-width: 2px 0px;
+			}
+			tr.body{
+				border: 0px solid gray;
+				border-width: 1px 0px;
+			}
+			
+			/*列宽设定*/
+			table{
+				width: 100%;
+			}
+			table.c1{
+				width: 80px;
+			}
+			table.c2{
+				width: 120px;
+			}
+			table.c3{
+				width: 60px;
+			}
+			table.c4{
+				width: 150px;
+			}
+			table.c5{
+				width: calc(100% - 80px - 120px - 60px - 150px);
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr class="head">
+				<th class="c1">学号</th>
+				<th class="c1">姓名</th>
+				<th class="c1">性别</th>
+				<th class="c1">电话</th>
+				<th class="c1">地址</th>
+			</tr>
+			<!--标题栏设置就行，下面的可以不设置-->
+			<tr class="body">
+				<td class="c1">201901</td>
+				<td class="c2">张三</td>
+				<td class="c3">男</td>
+				<td class="c4">13234455421</td>
+				<td class="c5">sgdfghghersadfaegsafa</td>
+			</tr>
+			<tr class="body">
+				<td class="c1">201902</td>
+				<td class="c2">钱五</td>
+				<td class="c3">男</td>
+				<td class="c4">84902847593</td>
+				<td class="c5">adfja;lsdjfhwofjadladsfjdjaljkdfajhdfakjdshfkljdfh</td>
+			</tr>
+			<tr class="body">
+				<td class="c1">201903</td>
+				<td class="c2">王二</td>
+				<td class="c3">女</td>
+				<td class="c4">28597036485</td>
+				<td class="c5">adjfalad</td>
+			</tr>
+			<tr class="body">
+				<td class="c1">201904</td>
+				<td class="c2">李四时</td>
+				<td class="c3">男</td>
+				<td class="c4">16593769403</td>
+				<td class="c5">adfajdfjakjdhfasdfj</td>
+			</tr>
+		</table>
+	</body>
+</html>
