@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<!--点击按钮时，执行test()方法-->
+		<button onclick="test()">测试</button>
+	</body>
+	<!--window:当前窗口对象
+	screen:屏幕对象
+	history:访问历史
+	location:地址栏
+	localStorage:本地存储
+	sessionStorage:会话级存储-->
+	<script>
+		function test(){
+			
+//			location.href = "http://afanihao.cn";
+
+			//控制浏览器跳转,在新窗口打开
+//			window.open("http://afanihao.cn");
+			console.log("屏幕大小:"+screen.width+" X "+screen.height);
+		}
+	</script>
+</html>

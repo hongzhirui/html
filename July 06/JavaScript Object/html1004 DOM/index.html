@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<button onclick="test()">测试</button>
+			<a id="website" href="http://afanihao.cn">阿发你好</a>
+		</div>
+	</body>
+	<script>
+		function test(){
+			//通过元素id找到元素
+			var elem = document.getElementById("website");
+			
+			//修改元素的内容
+			elem.innerHTML = "阿发你很好";
+			elem.innerText = "阿发你很好";
+		}
+	</script>
+</html>

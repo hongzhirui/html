@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		//创建一个对象，并不需要事先声明一个Student类型
+		var stu = new Object();
+		
+		//直接添加属性
+		stu.id = 20190001;
+		stu.name = "张三";
+		stu.sex = true;
+		
+		//直接添加方法
+		stu.introduce = function(){
+			console.log("hi,i am "+this.name);
+		};//方法末尾必须加分号
+		
+		//可以直接把一个Object输出到控制台
+		console.log(stu);
+		
+		//调用对象的方法
+		stu.introduce();
+	</script>
+</html>
