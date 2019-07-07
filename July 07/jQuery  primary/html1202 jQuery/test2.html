@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<style>
+			.box1{
+				width:200px;
+				height:60px;
+				border: 1px solid #ccc;
+				background-color: lightgray;
+				margin: 10px;
+				text-align: center;
+				padding: 10px;
+			}
+			.box2{
+				width:200px;
+				height:60px;
+				border: 1px solid #ccc;
+				background-color: lightblue;
+				margin: 10px;
+				text-align: center;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">afanihao.cn</div>
+		<div class="box2"></div>
+		<button onclick="test()">测试</button>
+	</body>
+	<script>
+		function test(){
+			//从class='box1'的元素中取出HTML
+			if($(".box1").html()!=""){
+				var str = $(".box1").html();
+				$(".box2").html(str);
+				$(".box1").html("");
+			}
+		}
+	</script>
+</html>

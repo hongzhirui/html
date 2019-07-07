@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<style>
+			.menu{
+				width: 100px;
+				background-color: cornflowerblue;
+				
+			}
+			.item{
+				padding: 8px;
+				text-align: center;
+				user-select:none;
+			}
+			.menu .item:hover{
+				background-color: #eee4;
+				border-color: #888;
+				border-width: 1px 0px;
+				color: #444;
+				cursor: pointer;
+			}
+			.menu .selected{
+				background-color: #eee8;
+				border-color: #888;
+				border-width: 1px 0px;
+				color: #444;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<div class="item">快速入门</div>
+			<div class="item">高级语法</div>
+			<div class="item">安卓入门</div>
+			<div class="item">安卓高级</div>
+		</div>
+	</body>
+	
+	<script>
+		//给每个item添加点击事件处理
+		$(".menu .item").click(function(){
+			//把旧的选中项去掉选中状态
+			//注意：removeClass()参数里不需要加点号
+			$('.menu .selected').removeClass('selected');
+			
+			//给被选中的这一项添加选中的状态
+			$(this).addClass('selected');
+			
+			//取出点中的项的信息
+			var str = $(this).html();
+			alert("选中了："+str);
+		})
+	</script>
+</html>

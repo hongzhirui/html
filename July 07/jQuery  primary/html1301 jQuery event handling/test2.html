@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<button class="xxx">按钮1</button>
+		<button class="xxx">按钮2</button>
+		<button class="xxx">按钮3</button>
+	</body>
+	<script>
+		function initEventSupport(){
+			$(".xxx").click(function(){
+				var je = $(this);
+				alert("点中了："+je.html());
+			});
+		}
+		
+		$(document).ready(function(){
+			initEventSupport();
+		})
+	</script>
+</html>

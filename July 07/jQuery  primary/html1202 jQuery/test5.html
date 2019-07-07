@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<style>
+			.thumb{
+				position: relative;
+				width: 150px;
+				height: 100px;
+			}
+			
+			.thumb img{
+				height: 100%;
+				width: 100%;
+			}
+			
+			.thumb .mask{
+				display: none;
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				bottom: 0px;
+				background-color: #fff8;
+			}
+			.thumb .mask button{
+				height: 100%;
+				width: 50%;
+				box-sizing: border-box;
+				border: 1px solid #aaa;
+				background-color: #fff0;
+			}
+			.thumb .mask button:hover{
+				color: darkblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="thumb" onmouseenter="$('.mask',this).fadeIn()"
+			onmouseleave="$('.mask',this).fadeOut()">
+			<img class="im" src="img/p1.jpg" />
+			<div class="mask">
+				<button>重新上传</button><button>删除</button>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script>
+		function show(elem){
+			
+		}
+		
+		function hide(elem){
+			
+		}
+	</script>
+</html>
