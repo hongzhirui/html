@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<style>
+			/*.main{
+				background-color: #ccc8;
+				position: fixed;
+				z-index: 1000px;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				opacity:1;
+			}*/
+			.dialog{
+				height: 200px;
+				width: 500px;
+				background-color: #f1f1f1;
+				position: absolute;
+				left: 400px;
+				top: 100px;
+				border: 1px solid #F1F1F1;
+				z-index: 1000;
+			}
+			.close-button{
+				background-color: #F1F1F1; 
+				border: 0px solid #F1F1F1;
+				font-style: italic;
+				position: absolute; 
+				left: 478px; top: 0px;"
+			}
+			button:hover{
+				cursor: pointer;
+			}
+			.close-button:hover{
+				cursor: pointer;
+				background-color: red;
+			}
+			.close{
+				display: none;
+			}
+			.show{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<button onclick="show()">显示对话框</button>
+			<div id=zhuyao class="main dialog close">
+				<div style="text-align: center; padding: 80px; font-size: 30px;">
+					对话框演示
+				</div>
+				
+				<button onclick="close1()" class="close-button">X</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		function show(){
+			$("#zhuyao").removeClass('close');
+			window.hide();
+		}
+		function close1(){
+			$("#zhuyao").addClass('close');
+			alert("你确定要关闭此窗口吗？");
+		}
+	</script>
+</html>
