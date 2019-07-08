@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.main{
+				height: 300px;
+				width: 500px;
+				background-color: white;
+				margin: 100px auto;
+				border: 1px solid gray;
+			}
+			.item{
+				display: inline-block;
+				height: 100px;
+				margin: 30px;
+			}
+			.text1{
+				display: inline-block;
+				width: 20%;
+				height: 30%;
+				text-align: right;
+				margin: 10px;
+				font-size: 20px;
+			}
+			.text2{
+				display: inline-block;
+				width: 60%;
+				height: 30%;
+				font-size: 18px;
+			}
+			button{
+				width: 70px;
+				margin: 50px 225px;
+				background-color: #4d79ff;
+				border: 1px solid #4d79ff;
+				border-radius: 5spx;
+				font-size: 20px;
+				color: white;
+				letter-spacing: 3px;
+				text-align: center;
+			}
+			button:hover{
+				cursor: pointer;
+				width: 80px;
+				margin: 48px 220px;
+				background-color: #4d79ff;
+				border: 1px solid #4d79ff;
+				border-radius: 5px;
+				font-size: 24px;
+				color: white;
+				letter-spacing: 3px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="item">
+				<div id='Id' class="text1">学号</div>
+				<input id="id" class="text2" />
+				<div id='Name'class="text1">姓名</div>
+				<input id="name" class="text2" />
+				<div id='Phone'class="text1">手机号</div>
+				<input id="phone" class="text2" />
+			</div>
+			<button id="1" onclick="on()">登录</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	
+	<script>
+		$("#1").click(function(){
+			alert("您填入的信息为："+$("#Id").html()+":"+$("id").val()+"  "+
+			$("#Name").html()+":"+$("name").val()+"  "+
+			$("#Phone").html()+":"+$("#phone").val()+"。");
+			
+		});
+	</script>
+</html>

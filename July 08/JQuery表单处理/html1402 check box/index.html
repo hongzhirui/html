@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div>
+			<button onclick="test1()">获取值</button>
+			<button onclick="test2()">设置值</button>
+		</div>
+		<input type="checkbox"  class="like" onchange="userChanged()"/>你喜欢我的课程吗？
+	</body>
+	<script>
+		function test1(){
+			if($(".like").prop('checked')){
+				alert("是的，我很喜欢");
+			}
+			else{
+				alert("为啥不喜欢");
+			}
+		}
+		
+		function test2(){
+			$(".like").prop('checked',true);
+		}
+		
+		function userChanged(){
+			console.log("用户改变了选择："+$(".like").prop("checked"));
+			alert("用户改变了选择："+$(".like").prop("checked"));
+		}
+	</script>
+</html>

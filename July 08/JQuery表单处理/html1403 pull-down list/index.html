@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<style>
+			.form select{
+				padding: 4px;
+				width: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<button onclick="test1()">获取值</button>
+			<button onclick="test2()">设置值</button>
+		</div>
+		
+		<div class='form' style='margin-top: 10px;'>
+			<select class="ke">
+				<option value="chinese">语文</option>
+				<option value='math'>数学</option>
+				<option value='english'>英语</option>
+			</select>
+		</div>
+	</body>
+	<script>
+		function test1(){
+			var ke = $('.ke').val();
+			alert("你选择了："+ke);
+		}
+		function test2(){
+			$(".ke").val("english");
+		}
+	</script>
+</html>
