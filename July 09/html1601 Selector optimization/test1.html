@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div class="sample">afanihao</div>
+		<div>
+			<button onclick="doChange()">更改</button>
+		</div>
+	</body>
+	<script>
+		function doChange(){
+			//无simple类选择器，不报错
+			$('.simple').html("阿发你好");
+		}
+	</script>
+</html>

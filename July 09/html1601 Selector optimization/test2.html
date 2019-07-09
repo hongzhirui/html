@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div class="sample">afanihao</div>
+		<div>
+			<button onclick="doChange()">更改</button>
+		</div>
+	</body>
+	<script>
+		function doChange(){
+			var target = $(".sample");
+			if(target.length==0){
+				throw '错误的选择器'; //抛出异常对象
+			}
+			target.html("阿发你好");
+		}
+	</script>
+</html>
