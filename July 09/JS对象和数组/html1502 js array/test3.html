@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		function Student(id, name){
+			this.id=id;
+			this.name=name;
+		}
+		
+		//在js里，中括号表示一个数组对象，里面的元素可以是任何类型
+		var students = [];
+		students.push(new Student(01,"赵"));
+		students.push(new Student(02,"钱"));
+		students.push(new Student(03,"孙"));
+		
+		for(var i=0; i<students.length; i++){
+			var stu = students[i];
+			console.log("学号："+stu.id+", 姓名："+stu.name);
+		}
+	</script>
+</html>

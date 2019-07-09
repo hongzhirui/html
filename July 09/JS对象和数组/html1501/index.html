@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</body>
+	<script>
+//		var str={};
+//		str.id=2019;
+//		str.name="红";
+//		str.introduce=function(){
+//			console.log("我的学号："+this.id + "，姓名："+this.name);
+//		}
+//		str.introduce();
+
+		var stu = {
+			id:2019,
+			name:"张庆",
+			introduce:function(){
+				console.log("学号："+this.id+"，姓名："+this.name);
+			}
+		}
+		
+		//遍历对象里的所用属性
+		for(var key in stu){
+			var value = stu[key];
+			
+			//用jQuery判断该属性是不是function
+			if(! $.isFunction(value)){
+				console.log(key+":"+value);
+			}
+		}
+	</script>
+</html>

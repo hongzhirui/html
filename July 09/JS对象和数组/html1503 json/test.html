@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		var names = ["张", "钱", "王"];
+		
+		console.log(names);
+		
+		var jsonstr = JSON.stringify(names);
+		console.log("转成JSON字符串："+jsonstr);
+		
+		var arr = JSON.parse(jsonstr);
+		console.log("转成对象："+arr);
+		
+	</script>
+</html>
